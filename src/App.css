@@ -1,0 +1,186 @@
+
+
+.App {
+  text-align: center;
+}
+
+/* .App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  } */
+/* } */
+
+
+/* #header{
+  height: 50px;
+  background-color: black;
+}
+.active{
+  background-color: black;
+}
+#nav li a * {
+  color: aliceblue;
+  text-decoration: none;
+  line-height: 15px;
+  border-radius: 5px;
+  display: inline-table;
+ 
+}
+.card{
+  max-width: 400px;
+  height: fit-content;
+
+  
+} */
+
+                            /* NAVBAR */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+            /* Thay đổi màu liên kết thành #111 (black) khi di chuột */
+li a:hover {
+  background-color: rgb(226, 194, 9);
+}
+
+.body{
+  width: auto;
+  height: auto;
+  
+}
+
+
+
+                                /* Body */
+.container{
+  display: flex;
+  /* justify-content: space-around; */
+  justify-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.container {
+  width: 100%;
+  height: auto;
+}
+.card{
+  max-width: 350px;
+  height: auto;
+  margin: 40px;
+  position: relative;
+}
+
+.card button {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  background-color: black;
+  
+}
+
+.card title{
+  color: yellowgreen;
+}
+
+
+                                      
+h3 {
+ font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: 550;
+}
+h3 {
+padding: 20px;
+}
+
+h4{
+   font-size: 20px;
+   font-family: 'Poppins', sans-serif;
+   color: coral;
+}
+h4 p{
+  padding: 10px;
+}
+p{
+  font-size: 16px;
+  margin-top: 0;
+}
+button{
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+font-weight: 550;
+}
+button{
+  border: none;
+  color: white;
+
+}
+button:hover{
+  color:white ;
+  background-color:red;
+  font-weight: 550;
+}
+.year{
+ font-family: 'Poppins', sans-serif;
+ font-size: 16px;
+ margin: 0;
+ 
+}
+
+
+                                        /* FOOTER */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: darkgoldenrod;
+  color: white;
+  text-align: center;
+} 
