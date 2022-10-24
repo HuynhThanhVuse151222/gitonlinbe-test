@@ -1,25 +1,27 @@
 // import logo from './logo.svg';
-import './App.css';
-import Footer from './components/Footer';
 
-import Main2 from './components/Main2';
-import Navigation from './components/Navigation';
-
+import './scss/App2.scss';
+import Footer from './Footer';
+import Navbar from './Navbar';
+import { Routes, Route , BrowserRouter} from 'react-router-dom';
+import  QA  from './QA';
+import Src from './Src';
 
 
 function App() {
+
   return (
-    <div className="App">
-     <Navigation/> 
-     <Main2/>
-   <Footer/>
+   
+    <div className="App" >
+  
+     <Navbar/>
+     < Routes>
+     <Route path='/qa' element = {<QA> </QA>}></Route>
+     <Route path='/src' element={<Src></Src>}></Route>
+     <Route path='/' ></Route>
+   </Routes>
     </div>
   );
 }
 
-// class Content extends React.Component{
-//   componentWillMount(){
-//     console.log()
-//   }
-// }
 export default App;

@@ -1,0 +1,152 @@
+
+
+$wid_box :400px;
+$hei_box : 400px;
+// $wid-img :500px;
+// $hei_img:400px;
+@mixin vh_minic{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+@mixin wh_image() {
+	
+	width: 400px;
+	height: 400px;
+}
+@mixin wh_row1() {
+	
+	width: 100%;
+	height: 20%;
+}
+@mixin wh_row2() {
+	
+	width: 100%;
+	height: 10%;
+}
+@mixin wh_row3() {
+	
+	width: 100%;
+	height: 70%;
+}
+@mixin hover-eff{
+    &:hover {
+        background-color: #00ddff;
+    }
+   
+}
+
+
+.App1{
+    width: 100%;
+    height: 100vh;
+    background-color: antiquewhite ;
+}
+.container{
+
+    display: flex;
+    justify-content: center;
+        /// fix cứng center page//
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50% );
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: small;
+    border: 5px dashed green;
+   
+    #info{
+        display: flex;
+    }
+    #contact{
+        display: flex;
+        .card{
+            width: 100%;
+            height: 100%;
+        }
+        .activator{
+            width: 396px;
+            height: 194.04px;
+        }
+        .card-image{
+            @include wh_row3()
+        }
+    }
+    
+    .MuiBox-root{
+   
+        width: $wid_box;
+        height: $hei_box;
+        box-sizing: border-box;
+        border: 2px solid #b1154a;
+        .MuiSvgIcon-root{
+            padding-left: 30px;
+            padding-top: 8px;
+        }
+        .row1{
+            @include wh_row1();
+           
+         }
+         .row2{
+            @include wh_row2();
+            h4{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: white;
+                background-color: black;
+                font-size: 30px;
+                text-align: justify;
+                margin: 0;
+              
+            }
+         }
+         .row3{
+            @include wh_row3();
+       
+            .mini-col1{
+                @include vh_minic();
+            }
+         }
+
+        }
+    .b1{
+        // background-color: aqua;
+        img{
+           @include wh_image();
+        }
+    }
+    .b2{
+        // background-color: antiquewhite;
+        @include hover-eff();
+        
+        
+    }
+    .b3{
+        // background-color: aquamarine;
+        @include hover-eff();
+       
+    }
+    .b4{
+        // background-color: yellow;
+        img{
+            @include wh_image();
+         }
+    }
+    .b5{
+        // background-color: coral;
+        img{
+            @include wh_image();
+         }
+    }
+    .b6{
+        // background-color: blueviolet;
+        @include hover-eff();
+        
+    }
+
+   
+}
+
+
+

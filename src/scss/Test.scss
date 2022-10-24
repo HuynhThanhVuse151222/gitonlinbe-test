@@ -1,0 +1,28 @@
+
+
+$wid_box :400px;
+$hei_box : 400px;
+.activator{
+    width: 300px;
+    height: 300px;
+ }
+ .MuiBox-root.css-k008qs {
+    height: 300px;
+    background-color: red;
+ }
+ .MuiBox-root.css-1k0gv8u{
+    background-color: red;
+ }
+.containert{
+    width: 100%;
+    height: 1000px;
+    .MuiBox-root{
+        width: 40%;
+        height: 40%;
+    }
+}
+ .MuiBox-root{
+   
+    width: $wid_box;
+    height: $hei_box;
+ }
